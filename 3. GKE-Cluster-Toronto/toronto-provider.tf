@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-project = var.gcp-project-id
+project = "pd-sandbox-project-388413"
   # Configuration options
 }
