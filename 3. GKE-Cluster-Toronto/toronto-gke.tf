@@ -22,7 +22,7 @@ module "gke" {
   horizontal_pod_autoscaling = true
   filestore_csi_driver       = false
   grant_registry_access      = true   #enable access to GCP container registries in the project. Creates SA
-  registry_project_ids       = "pd-sandbox-project-388413" #specify project
+  registry_project_ids       = ["pd-sandbox-project-388413"] #specify project
   enable_shielded_nodes      = true
   gke_backup_agent_config	   = true
   release_channel            = "STABLE"
